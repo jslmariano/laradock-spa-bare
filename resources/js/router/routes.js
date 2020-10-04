@@ -65,6 +65,33 @@ export default [{
       }
     ]
   },
+  //articles
+  {
+    path: '/articles',
+    name: 'articles',
+    component: page('articles/index.vue'),
+  },
+  {
+    path: '/article/manager',
+    name: 'article.manager',
+    component: page('articles/manager.vue'),
+  },
+  {
+    path: '/article/create',
+    name: 'article.create',
+    component: page('articles/create.vue'),
+  },
+  {
+    path: '/article/edit/:id',
+    name: 'article.edit',
+    component: page('articles/edit.vue'),
+  },
+  {
+    path: '/article/view/:url',
+    name: 'article.view',
+    component: page('articles/view.vue'),
+  },
+  //notes
   {
     path: '/notes',
     name: 'notes',
@@ -79,6 +106,11 @@ export default [{
     path: '/note/edit/:id',
     name: 'note.edit',
     component: page('notes/edit.vue'),
+  },
+  {
+    path: '/404',
+    name: 'page.not.found',
+    component: page('errors/404.vue')
   },
   {
     path: '*',
